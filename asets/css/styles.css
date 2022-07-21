@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {}
+
+#header {
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#nav .subnav {
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    line-height: 38px;
+}
+
+#nav li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    color: white;
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+    width: 180%;
+    height: 260%;
+}
+
+#slider {
+    background-color: gray;
+    /* padding-bottom: 50%;
+    margin-top:60px; 
+    z-index: 1;
+    background: url('/asets/image/chicago.jpg') top center/cover no-repeat; */
+    */
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 14px;
+    display: none;
+}
+
+#nav>li:hover>a {
+    color: black;
+    background-color: gray;
+}
+
+#nav .subnav li:hover {
+    color: black;
+    background-color: gray;
+    display: block;
+}
+
+#content {}
+
+#footer {}

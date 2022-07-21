@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: black;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#header #navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#header #navigation ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#header #navigation li {
+    list-style-type: none;
+    text-decoration: none;
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+#header #navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#header #navigation #sub-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 170%;
+    background-color: white;
+    height: 200%;
+    display: none;
+    z-index: 1;
+}
+
+#header #sub-nav li {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+#header #sub-nav li:hover {
+    background-color: #ccc;
+}
+
+#header #navigation #sub-nav a {
+    color: black;
+    text-transform: none;
+}
+
+#header #navigation .search {
+    color: white;
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+#header #navigation .nav-more {
+    padding-right: 25px;
+    position: relative;
+}
+
+#header #navigation .dropdown {
+    position: absolute;
+    right: 20.5%;
+    color: white;
+}
+
+#header #navigation li:hover {
+    background-color: #ccc;
+}
+
+#header #navigation li:hover a,
+#header #navigation li:hover .dropdown {
+    color: #000;
+}
+
+#header #navigation .search:hover {
+    background-color: red;
+}
+
+#header #navigation .nav-more:hover #sub-nav {
+    display: flex;
+}
+
+#banner {
+    background-image: url("./asets/image/chicago.jpg");
+    height: 674px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#banner .city,
+#banner .description {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    letter-spacing: 0.9px;
+}
+
+#banner .city {
+    bottom: 90px;
+    font-size: 23px;
+}
+
+#banner .description {
+    bottom: 60px;
+    font-weight: bold;
+}
+
+#introduce-the-band {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 770px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sub-title {
+    font-style: italic;
+    color: gray;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#introduce-the-band .text-description {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+#introduce-the-band .band-member {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#introduce-the-band .band-member .intro-member {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 120%;
+}
+
+#introduce-the-band .band-member .img-member {
+    width: 85%;
+    height: 75%;
+    border-radius: 5px;
+}
+
+#section-tour-dates {
+    background-color: #000;
+    height: 870px;
+}
+
+#section-tour-dates hr {
+    border: 1px solid gainsboro;
+}
+
+#section-tour-dates .section-title {
+    color: white;
+    padding-top: 100px;
+}
+
+#section-tour-dates .ticket-list {
+    background-color: white;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section-tour-dates .ticket-list ul {
+    height: 100%;
+}
+
+.soldout {
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+    padding: 3px 3px;
+}
+
+.ticket-list ul li {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    color: gray;
+    position: relative;
+}
+
+.ticket-month {
+    padding-left: 20px;
+}
+
+#section-tour-dates .ticket-list .amount-ticket {
+    background-color: #000;
+    color: white;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 25px;
+}
+
+#section-tour-dates .list-places {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#section-tour-dates .infor-place {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-tour-dates .infor-place img {
+    width: 100%;
+}
+
+#section-tour-dates .infor-place img:hover {
+    opacity: 0.7;
+}
+
+#section-tour-dates .infor-place .detail-place {
+    background-color: white;
+    padding-left: 14px;
+}
+
+#section-tour-dates .detail-place .name-place {
+    padding: 20px 0px 20px 0;
+    color: black;
+    font-weight: bold;
+}
+
+#section-tour-dates .detail-place .release-date {
+    padding: 0px 0px 24px 0px;
+}
+
+#section-tour-dates .detail-place .intro-place {
+    padding: 0 0 14px 0px;
+    font-size: 15px;
+}
+
+#section-tour-dates .detail-place button {
+    padding: 10px 18px;
+    background-color: #000;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#section-contact {
+    padding-top: 64px;
+    height: 500px;
+}
+
+#section-contact .information-contact {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    align-items: center;
+}
+
+#section-contact .information-contact .detail-infor {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#section-contact .information-contact .infor {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-contact .information-contact .text-infor {
+    width: 80%;
+}
+
+#section-contact .information-contact .input-fill {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 70px;
+}
+
+#section-contact .row-input input {
+    padding: 13px 8px;
+}
+
+#section-contact input {
+    border: 1px solid #ccc !important;
+    font-size: 14px;
+}
+
+#section-contact .row-input {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#section-contact .input-message {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#section-contact .input-message input {
+    width: 100%;
+    padding: 13px 10px;
+    margin-top: 20px;
+}
+
+#section-contact .btn-submit-infor {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#section-contact .btn-submit-infor:hover,
+#section-tour-dates .detail-place button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#map {
+    background-image: url(./asets/image/map.jpg);
+    background-position: center;
+    height: 700px;
+}
+
+#footer {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1!important;
+}
+
+#footer .social-media {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#footer .social-media i {
+    font-size: 25px;
+    color: gray;
+}
+
+#footer .social-media i:hover {
+    opacity: 0.7;
+}
+
+#footer .medium {
+    color: gray;
+    padding-bottom: 60px;
+}
